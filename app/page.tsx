@@ -38,7 +38,7 @@ export default function Home() {
       {/* Background Image with Parallax Effect */}
       <div 
         className="absolute inset-0 bg-cover bg-center bg-no-repeat scale-105 transition-transform duration-1000"
-        style={{ backgroundImage: 'url(/Oil-Tanker-Truck.jpg)' }}
+        style={{ backgroundImage: 'url(/Cargo.jpeg)' }}
       ></div>
       
       {/* Premium Gradient Overlay */}
