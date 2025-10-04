@@ -43,7 +43,7 @@ export default function Home() {
       
       {/* Premium Gradient Overlay */}
       <div 
-        className="absolute inset-0 backdrop-blur-[2px]"
+        className="absolute inset-0 backdrop-blur-[1px]"
         style={{ 
           background: 'linear-gradient(135deg, rgba(22, 30, 64, 0.92) 0%, rgba(22, 30, 64, 0.85) 50%, rgba(223, 35, 39, 0.80) 100%)' 
         }}
