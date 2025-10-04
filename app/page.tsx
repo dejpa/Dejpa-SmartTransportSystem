@@ -1,5 +1,37 @@
 'use client';
 
+import { useState, useEffect } from 'react';
+
+function CountUp({ end, duration = 2000 }: { end: number; duration?: number }) {
+  const [count, setCount] = useState(0);
+
+  useEffect(() => {
+    let startTime: number;
+    let animationFrame: number;
+
+    const animate = (currentTime: number) => {
+      if (!startTime) startTime = currentTime;
+      const progress = Math.min((currentTime - startTime) / duration, 1);
+      
+      setCount(Math.floor(progress * end));
+      
+      if (progress < 1) {
+        animationFrame = requestAnimationFrame(animate);
+      }
+    };
+
+    animationFrame = requestAnimationFrame(animate);
+
+    return () => {
+      if (animationFrame) {
+        cancelAnimationFrame(animationFrame);
+      }
+    };
+  }, [end, duration]);
+
+  return <span>{count.toLocaleString('fa-IR')}</span>;
+}
+
 export default function Home() {
   return (
     <div className="min-h-screen w-full flex items-center justify-center relative overflow-hidden px-4 sm:px-6 lg:px-8">
@@ -180,7 +212,7 @@ export default function Home() {
                   
                   {/* Number with counting animation */}
                   <div className="text-2xl sm:text-3xl lg:text-4xl font-black mb-2 sm:mb-3 bg-gradient-to-br from-white to-green-200 bg-clip-text text-transparent group-hover:from-green-200 group-hover:to-white transition-all duration-300">
-                    <span className="animate-countup">۱۰۰۰</span><span className="text-white group-hover:text-green-300">+</span>
+                    <CountUp end={1000} duration={2000} /><span className="text-white group-hover:text-green-300">+</span>
                   </div>
                   
                   {/* Label */}
