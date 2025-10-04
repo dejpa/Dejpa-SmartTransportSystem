@@ -91,7 +91,7 @@ export default function Home() {
               <div className="text-sm text-white/70">قابل اعتماد</div>
             </div>
             <div className="text-center">
-              <div className="text-3xl font-bold text-white mb-2">+۱۰۰۰</div>
+              <div className="text-3xl font-bold text-white mb-2">۱۰۰۰+</div>
               <div className="text-sm text-white/70">مشتری راضی</div>
             </div>
           </div>
