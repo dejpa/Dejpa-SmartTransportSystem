@@ -56,7 +56,7 @@ export default function Home() {
       </div>
 
       {/* Main Content Card */}
-      <div className="relative z-10 text-center w-full max-w-7xl mx-auto">
+      <div className="relative z-10 text-center w-full max-w-7xl mx-auto my-20">
         {/* Logo/Brand Section */}
         <div className="mb-8 sm:mb-12 lg:mb-16 animate-fadeIn">
           <img src="/logo-dejpa.png" alt="dejpa-logo" className="w-20 h-20 sm:w-24 sm:h-24 md:w-32 md:h-32 block mx-auto mb-4 sm:mb-6" />
