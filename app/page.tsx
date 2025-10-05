@@ -80,7 +80,7 @@ export default function Home() {
         {/* Call to Action Button */}
         <div className="space-y-4 sm:space-y-6 px-4">
           <a 
-            href="https://example.com" 
+            href="https://gps.activealarm.ir" 
             target="_blank"
             rel="noopener noreferrer"
             className="group inline-flex items-center justify-center gap-3 sm:gap-4 px-8 sm:px-12 md:px-16 py-4 sm:py-5 md:py-6 text-lg sm:text-xl md:text-2xl font-bold text-white rounded-xl sm:rounded-2xl transition-all duration-300 transform hover:scale-105 hover:shadow-2xl active:scale-95 border-2 border-white/20 w-full sm:w-auto"
